@@ -61,5 +61,5 @@ package() {
 		  -e s/%VER_SM%/$ver_sm/ig \
 		  -e s/%VER_FF%/$ver_ff/ig \
 		  -e s/%VER_GO%/$ver_go/ig $smdir/mozilla.cfg
-	 sqlite3 $smdir/defaults/profile/permissions.sqlite < $srcdir/permissions.sqlite.dump 
+	 sqlite3 $smdir/defaults/profile/permissions.sqlite < $srcdir/../permissions.sqlite.dump 
 }
