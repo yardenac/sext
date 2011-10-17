@@ -7,7 +7,7 @@ ver_go=7.0.1 #gecko
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
-makedepends=(wget xmlstarlet proterozoic zip unzip)
+makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
 source=("http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.22-sm+fx+fn.xpi"
@@ -21,6 +21,7 @@ source=("http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/8016/show_my_password-2.0-fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/156490/duplicate_this_tab-1.2-fx+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/59/user_agent_switcher-0.7.3-fx+sm.xpi"
 		  "https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://www.mirrorservice.org/sites/downloads.mozdev.org/xsidebar/mods/abduction!-2.026-mod.xpi"
 		  "https://www.eff.org/files/https-everywhere-latest.xpi")
@@ -36,13 +37,12 @@ md5sums=("1901bf5f998aae8ea277bc6495d92242"
 			"269401fde20879ec4f869052a7c8a37d"
 			"5aa14241662f9b1ac446cf1f80e71047"
 			"bf79cc4bdb169eececd99abcc9456103"
+			"d7f1f4b3689bf61c3d583432872a4cc2"
 			"e4280b110334b67fcfc9567100ef7e5b"
 			"94edd4b7cf9ecff3f00d2676739ab919"
 			"05ea1355a3f2e91b1ca10dd8bb88a7ea")
 # cookieswap
 # beefree <-- breaks statusbar!
-# fullerscreen
-# user agent switcher 0.7.3 or other...?
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm
 	 mkdir -p $smdir/extensions
@@ -52,6 +52,7 @@ package() {
 	 done
 	 install -D {$srcdir/..,$smdir/defaults/profile/adblockplus}/patterns.ini
 	 install -D {$srcdir/..,$smdir/defaults/profile}/localstore.rdf.sxt
+	 install -D {$srcdir/..,$smdir/defaults/profile}/useragents.xml
 	 install -D {$srcdir/..,$smdir/defaults/profile}/foxyproxy.xml
 	 install -D {$srcdir/..,$smdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$smdir}/mozilla.cfg
@@ -59,4 +60,5 @@ package() {
 		  -e s/%VER_SM%/$ver_sm/ig \
 		  -e s/%VER_FF%/$ver_ff/ig \
 		  -e s/%VER_GO%/$ver_go/ig $smdir/mozilla.cfg
+	 sqlite3 $smdir/defaults/profile/permissions.sqlite < $srcdir/permissions.sqlite.dump 
 }

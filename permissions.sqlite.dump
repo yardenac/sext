@@ -1,0 +1,7 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE moz_hosts ( id INTEGER PRIMARY KEY,host TEXT,type TEXT,permission INTEGER,expireType INTEGER,expireTime INTEGER);
+INSERT INTO "moz_hosts" VALUES(NULL,'mozilla.org','cookie',8,0,0);
+INSERT INTO "moz_hosts" VALUES(NULL,'livejournal.com','cookie',1,0,0);
+INSERT INTO "moz_hosts" VALUES(NULL,'google.com','cookie',1,0,0);
+COMMIT;
