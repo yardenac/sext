@@ -2,7 +2,4 @@ src/
 pkg/
 *.pkg.tar.*
 *~
-stage/
 *.xpi
-guide*
-f/
