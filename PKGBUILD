@@ -44,7 +44,6 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"
 			"5aa14241662f9b1ac446cf1f80e71047"
 			"533d19c08df11939dbaa7f7952238ccf"
 			"d7f1f4b3689bf61c3d583432872a4cc2")
-# cookieswap
 # beefree <-- breaks statusbar!
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm
@@ -53,9 +52,9 @@ package() {
 		  echo "Fixing $(basename "$xpi") ..."
 		  fix-extension $xpi $smdir/extensions
 	 done
+	 install -D {$srcdir/..,$smdir/defaults/profile/useragentswitcher}/useragents.xml
 	 install -D {$srcdir/..,$smdir/defaults/profile/adblockplus}/patterns.ini
 	 install -D {$srcdir/..,$smdir/defaults/profile}/localstore.rdf.sxt
-	 install -D {$srcdir/..,$smdir/defaults/profile}/useragents.xml
 	 install -D {$srcdir/..,$smdir/defaults/profile}/foxyproxy.xml
 	 install -D {$srcdir/..,$smdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$smdir}/mozilla.cfg
