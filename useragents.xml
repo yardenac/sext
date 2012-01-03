@@ -1,6 +1,6 @@
 <useragentswitcher>
-	<useragent description="Seamonkey 2.1.4 32 (actual)" useragent="Mozilla/5.0 (X11; Linux i686; rv:7.0.1) Gecko/20110930 Firefox/7.0.1 SeaMonkey/2.4.1" />
-	<useragent description="Seamonkey 2.1.4 64 (actual)" useragent="Mozilla/5.0 (X11; Linux x86_64; rv:7.0.1) Gecko/20110930 Firefox/7.0.1 SeaMonkey/2.4.1" />
+	<useragent description="Seamonkey 2.6.1 32 (actual)" useragent="Mozilla/5.0 (X11; Linux i686; rv:9.0.1) Gecko/20111241 Firefox/9.0.1 SeaMonkey/2.6.1" />
+	<useragent description="Seamonkey 2.6.1 64 (actual)" useragent="Mozilla/5.0 (X11; Linux x86_64; rv:9.0.1) Gecko/20111224 Firefox/9.0.1 SeaMonkey/2.6.1" />
 	<useragent description="Seamonkey 2.0.14 32" useragent="Mozilla/5.0 (X11; Linux i686; rv:1.9.1.19) Gecko/20110503 SeaMonkey/2.0.14" />
 	<useragent description="Seamonkey 2.0.14 64" useragent="Mozilla/5.0 (X11; Linux x86_64; rv:1.9.1.19) Gecko/20110503 SeaMonkey/2.0.14" />
 	<folder description="Internet Explorer">

@@ -1,6 +1,6 @@
 #!/bin/bash
 preowned_files=(
-	 usr/lib/seamonkey-2.4.1/defaults/profile/localstore.rdf
+	 usr/lib/seamonkey-2.6.1/defaults/profile/localstore.rdf
 )
 are_same() {
 	 [ -a "$1" ] && [ -a "$2" ] || return 1
