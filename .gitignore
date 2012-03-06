@@ -3,3 +3,4 @@ pkg/
 *.pkg.tar.*
 *~
 *.xpi
+*.xpi.1

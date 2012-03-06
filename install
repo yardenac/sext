@@ -1,36 +1,16 @@
 #!/bin/bash
-preowned_files=(
-	 usr/lib/seamonkey-2.6.1/defaults/profile/localstore.rdf
-)
-are_same() {
-	 [ -a "$1" ] && [ -a "$2" ] || return 1
-	 diff -qd "$1" "$2" >/dev/null
-}
-clobberella() {
-	 F="$1"
-	 [ -f "$F.sxt" ] || return 0
-	 [ -f "$F" ] && { #do a "nice clobber" - make a (unique) backup
-		  are_same ${F}{,.sxt} && return || \
-				for N in {001..999}; do
-					 [ -f "$F.old.$N" ]			|| { mv -n ${F}{,.old.$N};	break; }
-					 are_same ${F}{,.old.$N}	&& { rm -f "$F";				break; }
-				done
-	 }
-	 cp -n "$F.sxt" "$F"
-}
-pwn_files() {
-	 for F in ${preowned_files[@]}; do
-		  clobberella "$F"
-	 done
-}
+
 post_install() {
-	 pwn_files
+	 /bin/cp -rf usr/lib/seamonkey-2.7/defaults/profile/localstore.rdf{.sxt,}
 }
-pre_upgrade() {
-	 for F in ${preowned_files[@]}; do
-		  are_same ${F}{,.sxt} && rm -f "$F" || :
-	 done
-}
+
 post_upgrade() {
-	 pwn_files
+	 /bin/cp -rf usr/lib/seamonkey-2.7/defaults/profile/localstore.rdf{.sxt,}
+
+	 # clean_old_files
+	 for ver in 2.5 2.6 2.6.1; do
+		  shopt -s nullglob
+		  rm -f usr/lib/seamonkey-${ver}/defaults/profile/localstore.rdf.*
+		  rmdir --ignore-fail-on-non-empty -p usr/lib/seamonkey-${ver}/ &>/dev/null; :
+	 done
 }
