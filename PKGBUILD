@@ -1,8 +1,8 @@
 pkgname=sext
 pkgver=0.$(date +%s)
 pkgrel=1
-ver_sm=2.7.1 #seamonkey
-ver_go=10.0.1 #gecko
+ver_sm=2.8 #seamonkey
+ver_go=11.0 #gecko
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
@@ -19,10 +19,10 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/156490/duplicate_this_tab-1.2-fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4-fx+sm+tb.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.5-fx+sm+tb.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.6-fx+tb+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/337195/google_privacy-0.2.0-fx+sm.xpi"
 		  "https://www.eff.org/files/https-everywhere-2.0development.4.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.3.2-fx+fn+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.3.5-fn+fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.25-fx+sm.xpi"
@@ -40,17 +40,17 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"bf79cc4bdb169eececd99abcc9456103"	# duplicate this
 			"df01da6e2b21fed352e0b4f8bb43669f"	# flashgot
-			"e63201e4a4b5cd799aaf8fb75d5735e7"	# foxyproxy
+			"457de98591c612c64d947a881e3225f6"	# foxyproxy
 			"e19444ddef4d7517d734d9d2d3fa1c35"	# google privacy
 			"886996c0ae21f7287e0f2f7b05dfd80e"	# https everywhere
-			"a3e048ffd4a925b6289008b856a72a31"	# noscript
+			"96e0d6b2fb0b186e603194dec3606a77"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
 			"7b3d82f708d0f5df9f1db34c92428d5f"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: Mar 6 2012
+# last checked for updates: Mar 18 2012
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
