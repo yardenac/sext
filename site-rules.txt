@@ -73,6 +73,7 @@ bbc.co.uk
 bbci.co.uk
 bbcimg.co.uk
 berkeley-public.org
+bing.com
 bitbucket.org
 blip.tv
 blogger.com
@@ -125,6 +126,7 @@ fsdn.com
 geeks.com
 github.com
 gmodules.com
+gnu.org
 godaddy.com
 goodreads.com
 googleapis.com
@@ -160,8 +162,10 @@ kayak.com
 kernel.org
 kohls.com
 librarything.com
+libraryreserve.com
 linode.com
 livejournal.com
+live.com
 live.net
 lj-toys.com
 lmgtfy.com
@@ -186,6 +190,7 @@ okccdn.com
 okcimg.com
 okcupid.com
 onionstatic.com
+overdrive.com
 paypal.com
 paypalobjects.com
 plsinfo.org
@@ -205,6 +210,8 @@ secureserver.net
 serverfault.com
 sfpl.org
 slashdot.org
+slideshare.net
+slidesharecdn.com
 sonic.net
 sourceforge.net
 speedera.net
@@ -235,6 +242,7 @@ twimg.com
 twitter.com
 ubuntuforums.org
 ups.com
+usps.com
 verisign.com
 verizonwireless.com
 vimeocdn.com
@@ -305,6 +313,7 @@ mozilla.org
 mozillazine.org
 msn.com
 oaklandlibrary.org
+overdrive.com
 pastebin.com
 pidgin.im
 priceline.com
@@ -318,6 +327,7 @@ torrentreactor.net
 torrentreactor.to
 travelocity.com
 twitpic.com
+usps.com
 verizonwireless.com
 virginamerica.com
 virtualearth.net
@@ -499,6 +509,7 @@ ytimg.com
 about.com|tqn.com
 allrecipes.com|media-allrecipes.com
 amazon.com|amazonawks.com
+amazon.com|cloudfront.net
 amazon.com|ssl-images-amazon.com
 americanexpress.com|aexp-static.com
 answers.com|answcdn.com
@@ -515,6 +526,8 @@ bbc.co.uk|bbci.co.uk
 bbc.co.uk|bbcimg.co.uk
 bbc.in|bbc.co.uk
 bilerico.com|bilerico.net
+bing.com|live.com
+bing.com|virtualearth.net
 bitbucket.org|cloudfront.net
 blogger.com|blogblog.com
 blogsmithmedia.com|aolcdn.com
@@ -526,8 +539,10 @@ boardgamegeek.com|geekdo-images.com
 buzzfeed.com|buzzfed.com
 ca.gov|cgnsecurity.com
 cafepress.com|cpcache.com
+cbsnews.com|com.com
 cc.com|comedycentral.com
 chase.com|virtualearth.net
+cloudfront.net|ssl-images-amazon.com
 cnet.com|cbsistatic.com
 cnn.com|cnn.net
 cnn.com|turner.com
@@ -548,6 +563,7 @@ evite.com|google.com
 facebook.com|akamaihd.net
 facebook.com|fbcdn.net
 flickr.com|yahoo.com
+flightstats.com|cloudfront.net
 forbes.com|forbesimg.com
 forvo.com|google.com
 geeks.com|geeksimages.com
@@ -556,9 +572,12 @@ github.com|cloudfront.net
 github.com|newrelic.com
 github.com|skitch.com
 gmail.com|google.com
+gnu.org|fsf.org
+gnu.org|nongnu.org
 go.com|abc.com
 go.com|abcnews.com
 godaddy.com|secureserver.net
+google.co.uk|google.com
 google.com|google.com.hk
 google.com|googlesyndication.com
 google.com|paypal.com
@@ -572,7 +591,12 @@ homedepot.com|brightcove.com
 hotwire.com|hotwirestatic.com
 howjsay.com|google.com
 hp.com|hp-ww.com
+huffingtonpost.co.uk|huffingtonpost.com
+huffingtonpost.co.uk|huffpost.com
+huffingtonpost.co.uk|aolcdn.com
+huffingtonpost.co.uk|google.co.uk
 huffingtonpost.com|aolcdn.com
+huffingtonpost.com|huffingtonpost.co.uk
 huffingtonpost.com|huffpost.com
 huffingtonpost.com|newsinc.com
 hulu.com|huluim.com
@@ -583,6 +607,7 @@ informaction.com|mozilla.org
 khanacademy.org|khan-academy.appspot.com
 kpbs.org|ellingtoncms.com
 kpbs.org|npr.org
+libraryreserve.com|overdrive.com
 livejournal.com|cakewrecks.com
 livejournal.com|dreamwidth.org
 livejournal.com|feedburner.com
@@ -634,6 +659,7 @@ namecheap.com|cloudfront.net
 newegg.com|criteo.com
 newegg.com|neweggimages.com
 newegg.com|paypal.com
+nongnu.org|gnu.org
 noscript.net|informaction.com
 noscript.net|mozilla.org
 nyti.ms|nytimes.com
@@ -648,6 +674,8 @@ onion.com|theonion.com
 opednews.com|motherjones.com
 oreilly.com|oreillynet.com
 outwear.com|perfora.net
+overdrive.com|contentreserve.com
+overdrive.com|libraryreserve.com
 overstock.com|ostkcdn.com
 panoramio.com|google.com
 paypal.com|ebaystatic.com
@@ -677,6 +705,9 @@ secureserver.net|godaddy.com
 serverfault.com|google.com
 serverfault.com|sstatic.net
 sfg.ly|sfgate.com
+sfpl.org|slideshare.net
+sfpl.org|openlibrary.org
+slideshare.net|slidesharecdn.com
 sns.mx|snsanalytics.com
 snsanalytics.com|insidebayarea.com
 speedera.net|progressive.com
@@ -727,6 +758,7 @@ vimeo.com|vimeocdn.com
 virginamerica.com|google.com
 volusion.com|akamai.net
 vzw.com|vzwcorp.com
+walmart.com|walmartimages.com
 washingtonpost.com|wpdigital.net
 washingtontimes.com|washtimes.com
 westfield.com|atwestfield.com

@@ -18,11 +18,11 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/3255/cookieswap-0.5.284-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/156490/duplicate_this_tab-1.2-fx+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4-fx+sm+tb.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.1-fx+sm+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.6-fx+tb+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/337195/google_privacy-0.2.0-fx+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/337195/google_privacy-0.2.1-fx+sm.xpi"
 		  "https://www.eff.org/files/https-everywhere-2.0development.4.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.3.5-fn+fx+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.3.8-sm+fn+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.25-fx+sm.xpi"
@@ -39,11 +39,11 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"bf79cc4bdb169eececd99abcc9456103"	# duplicate this
-			"df01da6e2b21fed352e0b4f8bb43669f"	# flashgot
+			"236b268b34c7551e8cfb83f554328f57"	# flashgot
 			"457de98591c612c64d947a881e3225f6"	# foxyproxy
-			"e19444ddef4d7517d734d9d2d3fa1c35"	# google privacy
+			"c9410748ba428b4a723392e86bc646c0"	# google privacy
 			"886996c0ae21f7287e0f2f7b05dfd80e"	# https everywhere
-			"96e0d6b2fb0b186e603194dec3606a77"	# noscript
+			"3b9f0e7c8a32a91437495cecc9d97e88"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
 			"7b3d82f708d0f5df9f1db34c92428d5f"	# requestpolicy
