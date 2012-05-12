@@ -1,14 +1,14 @@
 #!/bin/bash
 
 post_install() {
-	 /bin/cp -rf usr/lib/seamonkey-2.8/defaults/profile/localstore.rdf{.sxt,}
+	 /bin/cp -rf usr/lib/seamonkey-2.9/defaults/profile/localstore.rdf{.sxt,}
 }
 
 post_upgrade() {
-	 /bin/cp -rf usr/lib/seamonkey-2.8/defaults/profile/localstore.rdf{.sxt,}
+	 /bin/cp -rf usr/lib/seamonkey-2.9/defaults/profile/localstore.rdf{.sxt,}
 
 	 # clean_old_files
-	 for ver in 2.5 2.6 2.6.1 2.7 2.7.1 2.7.2; do
+	 for ver in 2.5 2.6 2.6.1 2.7 2.7.1 2.7.2 2.8; do
 		  shopt -s nullglob
 		  rm -f usr/lib/seamonkey-${ver}/defaults/profile/localstore.rdf.*
 		  rmdir --ignore-fail-on-non-empty -p usr/lib/seamonkey-${ver}/defaults/profile/ &>/dev/null; :
