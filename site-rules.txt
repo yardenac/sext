@@ -83,6 +83,8 @@ braodcom.com
 brightcove.com
 brother-usa.com
 bump.com
+camelcamelcamel.com
+camelegg.com
 chase.com
 chess.com
 chesscomfiles.com
@@ -99,6 +101,7 @@ dell.com
 democracynow.org
 demonoid.com
 demonoid.me
+demonoid.ph
 disqus.com
 dnssec-tools.org
 dreamwidth.net
@@ -171,6 +174,7 @@ live.com
 live.net
 lj-toys.com
 lmgtfy.com
+localhost
 longtailvideo.com
 mapmash.in
 mbnanetaccess.com
@@ -209,6 +213,7 @@ redditstatic.com
 rhapsody.com
 rollingrelease.com
 rsync.net
+santacruzpl.org
 secureserver.net
 serverfault.com
 sfpl.org
@@ -357,6 +362,7 @@ cragslist.org
 delicious.com
 demonoid.com
 demonoid.me
+demonoid.ph
 dreamwidth.org
 ebay.com
 elance.com
@@ -402,6 +408,7 @@ renebooks.com
 riteav.com
 rollingrelease.com
 rsync.net
+santacruzpl.org
 scribd.com
 secureserver.net
 serverfault.com
@@ -545,6 +552,8 @@ boardgamegeek.com|geekdo-images.com
 buzzfeed.com|buzzfed.com
 ca.gov|cgnsecurity.com
 cafepress.com|cpcache.com
+camelegg.com|camelcamelcamel.com
+camelegg.com|newegg.com
 cbsnews.com|com.com
 cc.com|comedycentral.com
 chase.com|virtualearth.net
@@ -554,12 +563,14 @@ cnn.com|cnn.net
 cnn.com|turner.com
 codinghorror.com|typepad.com
 collegehumor.com|cvcdn.com
+contentreserve.com|amazon.com
 cracked.com|crackedcdn.com
 craigslist.ca|craigslist.org
 craigslist.org|google.com
 delicious.com|yahoo.com
 democracynow.org|dvlabs.com
 democracynow.org|longtailvideo.com
+demonoid.ph|demonoid.me
 dreamwidth.org|dreamwidth.net
 dreamwidth.org|google.com
 dreamwidth.org|livejournal.com
@@ -612,6 +623,7 @@ icanhascheezburger.com|cheezburger.com
 igc.org|earthlink.net
 imdb.com|media-imdb.com
 informaction.com|mozilla.org
+israelnationalnews|a7.org
 khanacademy.org|khan-academy.appspot.com
 kpbs.org|ellingtoncms.com
 kpbs.org|npr.org
@@ -708,6 +720,7 @@ redd.it|reddit.com
 reddit.com|redditmedia.com
 reddit.com|redditstatic.com
 retailmenot.com|rmncdn.com
+reuters.com|reutersmedia.net
 rhapsody.com|rhap.com
 scrabblefinder.com|cloudfront.net
 scribd.com|scribdassets.com
@@ -738,6 +751,7 @@ stanford.edu|maptiler.org
 stumbleupon.com|stumble-upon.com
 superuser.com|google.com
 superuser.com|sstatic.net
+superuser.com|stackauth.com
 superuser.com|stackexchange.com
 svp.ly|svpply.com
 target.com|images-amazon.com
@@ -752,16 +766,20 @@ thedailyshow.com|mtv.com
 thedailyshow.com|mtvnimages.com
 thedailyshow.com|mtvnservices.com
 theonion.com|onionstatic.com
+thephoenix.com|phx.com
 theregister.co.uk|regmedia.co.uk
 thesocietypages.org|blogspot.com
 time.com|timeinc.net
 timeout.com|timeoutnewyork.com
 tl.gd|twitlonger.com
 transmissionbt.com|google.com
+twitpic.com|cloudfront.net
 twitpic.com|twimg.com
 twitter.com|akamaihd.net
 twitter.com|google.com
 twitter.com|twimg.com
+twitter.com|twitpic.com
+twitter.com|yfrog.com
 usatoday.com|usatoday.net
 uww.edu|vimeo.com
 vanillaresults.com|google.com

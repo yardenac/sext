@@ -1,8 +1,8 @@
 pkgname=sext
 pkgver=0.$(date +%s)
 pkgrel=1
-ver_sm=2.9 #seamonkey
-ver_go=12.0 #gecko
+ver_sm=2.10 #seamonkey
+ver_go=13.0 #gecko
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
@@ -18,14 +18,14 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/3255/cookieswap-0.5.284-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/156490/duplicate_this_tab-1.2-fx+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.4-tb+fx+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.6-fx+tb+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.5-fx+tb+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.6.2-sm+tb+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/337195/google_privacy-0.2.1-fx+sm.xpi"
 		  "https://www.eff.org/files/https-everywhere-3.0development.2.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.4.1-fn+fx+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.4.6-fx+fn+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.25-fx+sm.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.26-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/8016/show_my_password-2.0-fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/3173/trackmenot-0.6.728-fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/59/user_agent_switcher-0.7.3-fx+sm.xpi")
@@ -39,18 +39,18 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"bf79cc4bdb169eececd99abcc9456103"	# duplicate this
-			"ba709d489b52cac13a7f7839508b4213"	# flashgot
-			"457de98591c612c64d947a881e3225f6"	# foxyproxy
+			"717fbce0aaf0d1f7340a6b8b0f824bb6"	# flashgot
+			"c84a71a4961b6608eaa9652375706b16"	# foxyproxy
 			"c9410748ba428b4a723392e86bc646c0"	# google privacy
 			"4ea2b3868a2390810390ef947ffc9b66"	# https everywhere
-			"a520c25f73e39e0e9744e32ded1f0da9"	# noscript
+			"fdaae72c80c777bc7bafa8b0d0973d4b"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
-			"7b3d82f708d0f5df9f1db34c92428d5f"	# requestpolicy
+			"22034b025f037e9b8030def464217d27"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: May 12 2012
+# last checked for updates: June 14 2012
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
