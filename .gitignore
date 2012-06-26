@@ -4,3 +4,4 @@ pkg/
 *~
 *.xpi
 *.xpi.*
+*.jar

@@ -3,6 +3,7 @@ pkgver=0.$(date +%s)
 pkgrel=1
 ver_sm=2.10 #seamonkey
 ver_go=13.0 #gecko
+ver_ff=13.0.1 #firefox
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
@@ -55,23 +56,27 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 # proxy tool
 # beefree <-- breaks statusbar!
 package() {
-	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm
-	 mkdir -p $smdir/extensions
+	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm ffdir=$pkgdir/usr/lib/firefox
+	 mkdir -p $smdir/extensions $ffdir/extensions $ffdir/defaults/profile
 	 for xpi in $srcdir/*.xpi; do
 		  echo "Fixing $(basename "$xpi") ..."
 		  fix-extension $xpi $smdir/extensions
 	 done
+	 install -D {$smdir,$ffdir}/extensions/{57068FBE-1506-42ee-AB02-BD183E7999E4}.xpi
 	 rm -f $smdir/extensions/https-everywhere@eff.org/chrome/content/rules/GoogleMaps.xml~HEAD
 	 install -D {$srcdir/..,$smdir/defaults/profile/useragentswitcher}/useragents.xml
 	 install -D {$srcdir/..,$smdir/defaults/profile/adblockplus}/patterns.ini
 	 install -D {$srcdir/..,$smdir/defaults/profile}/localstore.rdf.sxt
 	 install -D {$srcdir/..,$smdir/defaults/profile}/foxyproxy.xml
 	 install -D {$srcdir/..,$smdir/defaults/pref}/local-settings.js
+	 install -D {$srcdir/..,$ffdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$smdir}/mozilla.cfg
+	 install -D $srcdir/../mozilla.ff.cfg $ffdir/mozilla.cfg
+	 install -D $srcdir/../localstore.ff.rdf $ffdir/defaults/profile/localstore.rdf
 	 sed -i \
 		  -e s/%VER_SM%/$ver_sm/ig \
 		  -e s/%VER_FF%/$ver_ff/ig \
-		  -e s/%VER_GO%/$ver_go/ig $smdir/mozilla.cfg
+		  -e s/%VER_GO%/$ver_go/ig {$smdir,$ffdir}/mozilla.cfg
 
 	 rps_section() { grep -Pzo '(?<=\['"${1}"'\]\n)[^[]*' $srcdir/../site-rules.txt; }
 	 section_to_pref()  { echo        'pref("'"$2"'","'$(rps_section "$1")'");' >> $smdir/mozilla.cfg; }
