@@ -64,6 +64,7 @@ americanexpress.com
 aolcdn.com
 aol.com
 archlinux.org
+archwomen.org
 arcticsilver.com
 asus.com
 bankofamerica.com
@@ -352,6 +353,7 @@ amazonwebstore.com
 americanexpress.com
 annualcreditreport.com
 archlinux.org
+archwomen.org
 bankofamerica.com
 bart.gov
 bayareafastrak.org
@@ -575,6 +577,7 @@ dreamwidth.org|dreamwidth.net
 dreamwidth.org|google.com
 dreamwidth.org|livejournal.com
 dreamwidth.org|nocookie.net
+ebay.com|ebayimg.com
 ebay.com|ebayrtm.com
 ebay.com|ebaystatic.com
 ehow.com|ehowcdn.com
@@ -746,6 +749,7 @@ stackoverflow.com|google.com
 stackoverflow.com|sstatic.net
 stackoverflow.com|stackauth.com
 stackoverflow.com|stackexchange.com
+stackoverflow.com|superuser.com
 stanford.edu|google.com
 stanford.edu|maptiler.org
 stumbleupon.com|stumble-upon.com
