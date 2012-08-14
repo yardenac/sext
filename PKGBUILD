@@ -57,6 +57,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 # beefree <-- breaks statusbar!
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm ffdir=$pkgdir/usr/lib/firefox
+	 local smprof=$smdir/defaults/profile ffprof=$ffdir/defaults/profile
 	 mkdir -p $smdir/extensions $ffdir/extensions $ffdir/defaults/profile
 	 for xpi in $srcdir/*.xpi; do
 		  echo "Fixing $(basename "$xpi") ..."
@@ -64,10 +65,10 @@ package() {
 	 done
 	 install -D {$smdir,$ffdir}/extensions/{57068FBE-1506-42ee-AB02-BD183E7999E4}.xpi
 	 rm -f $smdir/extensions/https-everywhere@eff.org/chrome/content/rules/GoogleMaps.xml~HEAD
-	 install -D {$srcdir/..,$smdir/defaults/profile/useragentswitcher}/useragents.xml
-	 install -D {$srcdir/..,$smdir/defaults/profile/adblockplus}/patterns.ini
-	 install -D {$srcdir/..,$smdir/defaults/profile}/localstore.rdf.sxt
-	 install -D {$srcdir/..,$smdir/defaults/profile}/foxyproxy.xml
+	 install -D {$srcdir/..,$smprof/useragentswitcher}/useragents.xml
+	 install -D {$srcdir/..,$smprof/adblockplus}/patterns.ini
+	 install -D {$srcdir/..,$smprof}/localstore.rdf.sxt
+	 install -D {$srcdir/..,$smprof}/foxyproxy.xml
 	 install -D {$srcdir/..,$smdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$ffdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$smdir}/mozilla.cfg
@@ -102,7 +103,7 @@ package() {
 		  rps_section cookies-temp | to_cookietype 8
 		  rps_section cookies-full | to_cookietype 1
 		  echo "COMMIT;"
-	 } | sqlite3 $smdir/defaults/profile/permissions.sqlite
+	 } | sqlite3 $smprof/permissions.sqlite
 
 	 # awful hack until fix-extension can deal with commented-out fields!
 	 betterprivacy="$smdir/extensions/{d40f5e7b-d2cf-4856-b441-cc613eeffbe3}.xpi"
