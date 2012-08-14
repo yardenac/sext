@@ -58,6 +58,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm ffdir=$pkgdir/usr/lib/firefox
 	 local smprof=$smdir/defaults/profile ffprof=$ffdir/defaults/profile
+	 local xpi section
 	 mkdir -p $smdir/extensions $ffdir/extensions $ffdir/defaults/profile
 	 for xpi in $srcdir/*.xpi; do
 		  echo "Fixing $(basename "$xpi") ..."
