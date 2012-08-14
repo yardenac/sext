@@ -123,12 +123,14 @@ facebook.net
 fbcdn.net
 fdcservers.net
 fedex.com
+feministhackers.org
 fetlife.com
 flashtux.org
 flysfo.com
 forvo.com
 freshmeat.net
 fsdn.com
+gaug.es
 geeks.com
 github.com
 gmodules.com
@@ -191,6 +193,7 @@ mtvnservices.com
 myopenid.com
 newegg.com
 neweggimages.com
+notifymyandroid.com
 nyt.com
 nytimes.com
 oaklandlibrary.org
@@ -306,6 +309,7 @@ ebayrtm.com
 ebaystatic.com
 ebmud.com
 expedia.com
+feministhackers.org
 geeks.com
 godaddy.com
 google.co.il
@@ -397,6 +401,7 @@ macmall.com
 mplayerhq.hu
 myopenid.com
 newegg.com
+notifymyandroid.com
 nytimes.com
 okcupid.com
 pageturnereditions.com
@@ -591,6 +596,7 @@ forvo.com|google.com
 geeks.com|geeksimages.com
 github.com|akamai.net
 github.com|cloudfront.net
+github.com|gaug.es
 github.com|newrelic.com
 github.com|skitch.com
 gmail.com|google.com
@@ -607,6 +613,7 @@ google.com|serverfault.com
 google.com|stackexchange.com
 google.com|stackoverflow.com
 google.com|superuser.com
+gravatar.com|akamai.net
 guardian.co.uk|guim.co.uk
 guardian.co.uk|theguardian.tv
 homedepot.com|brightcove.com
@@ -687,6 +694,7 @@ newegg.com|paypal.com
 nongnu.org|gnu.org
 noscript.net|informaction.com
 noscript.net|mozilla.org
+notifymyandroid.com|google.com
 nyti.ms|nytimes.com
 nytimes.com|akamai.net
 nytimes.com|brightcove.com
@@ -800,6 +808,7 @@ wheresgeorge.com|google.com
 wheresgeorge.com|wheresgeorge.net
 whygitisbetterthanx.com|twictur.es
 wikia.com|nocookie.net
+wikibooks.org|wikimedia.org
 wikihow.com|whstatic.com
 wikimedia.org|toolserver.org
 wikinews.org|wikimedia.org
@@ -812,6 +821,7 @@ wp.me|wordpress.com
 wsimg.com|secureserver.net
 wsj.com|wsj.net
 wunderground.com|wxug.com
+yahoo.com|bing.net
 yelp.com|akamaihd.net
 yelp.com|cloudfront.net
 yelp.com|google.com
