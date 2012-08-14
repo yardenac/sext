@@ -7,7 +7,7 @@ ver_ff=14.0.1 #firefox
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
-makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
+makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3 nss)
 depends=(seamonkey=$ver_sm)
 install=install
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
@@ -58,7 +58,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm ffdir=$pkgdir/usr/lib/firefox
 	 local smprof=$smdir/defaults/profile ffprof=$ffdir/defaults/profile
-	 local xpi section
+	 local xpi section REPLY cert certname
 	 mkdir -p $smdir/extensions $ffdir/extensions $ffdir/defaults/profile
 	 for xpi in $srcdir/*.xpi; do
 		  echo "Fixing $(basename "$xpi") ..."
@@ -115,4 +115,12 @@ package() {
 	 sed 's/<!--\(em:targetApplication.*\)-->/<\1>/' $tmpfile \
 		  | rezip "$betterprivacy" install.rdf
 	 rm -f "$tmpfile"
+
+#	 certutil -Nd $smprof/
+#	 find $srcdir/../certs/* | while read; do
+#		  cert=$(readlink -e "$REPLY") || continue
+#		  certname=$(basename "$REPLY" .pem) || continue
+#		  echo "cert: $cert $certname"
+#		  certutil -Aad $smprof/ -n "$certname" -i "$cert" -t P,,
+#	 done
 }
