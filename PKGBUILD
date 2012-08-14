@@ -70,6 +70,8 @@ package() {
 	 install -D {$srcdir/..,$smprof/adblockplus}/patterns.ini
 	 install -D {$srcdir/..,$smprof}/localstore.rdf.sxt
 	 install -D {$srcdir/..,$smprof}/foxyproxy.xml
+	 install -D {$srcdir/..,$smprof}/cert_override.txt
+	 install -D {$srcdir/..,$ffprof}/cert_override.txt
 	 install -D {$srcdir/..,$smdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$ffdir/defaults/pref}/local-settings.js
 	 install -D {$srcdir/..,$smdir}/mozilla.cfg
