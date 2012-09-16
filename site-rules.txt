@@ -205,6 +205,8 @@ onionstatic.com
 overdrive.com
 paypal.com
 paypalobjects.com
+piratepad.net
+piratenpad.de
 plsinfo.org
 posterous.com
 prettyqueer.com
@@ -409,6 +411,8 @@ nytimes.com
 okcupid.com
 pageturnereditions.com
 paypal.com
+piratepad.net
+piratenpad.de
 plsinfo.org
 posterous.com
 progressive.com
