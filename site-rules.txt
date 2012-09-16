@@ -120,6 +120,7 @@ evite.com
 expedia.com
 facebook.com
 facebook.net
+fastly.net
 fbcdn.net
 fdcservers.net
 fedex.com
@@ -272,6 +273,8 @@ wheresgeorge.com
 wikimedia.org
 wikipedia.org
 wiktionary.org
+wordpress.com
+wp.com
 wsimg.com
 wunderground.com
 wxug.com
@@ -440,6 +443,7 @@ vr.org
 wheresgeorge.com
 wikia.com
 wikimedia.org
+wordpress.com
 yelp.com
 zappos.com
 [origins]
@@ -589,6 +593,7 @@ ehow.com|ehowcdn.com
 evite.com|google.com
 facebook.com|akamaihd.net
 facebook.com|fbcdn.net
+fetlife.com|fastly.net
 flickr.com|yahoo.com
 flightstats.com|cloudfront.net
 forbes.com|forbesimg.com
@@ -816,6 +821,7 @@ wikipedia.com|wikipedia.org
 wikipedia.org|wikimedia.org
 wiktionary.org|wikimedia.org
 wordpress.com|cloudfront.net
+wordpress.com|wp.com
 wp.com|wordpress.com
 wp.me|wordpress.com
 wsimg.com|secureserver.net
