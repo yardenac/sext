@@ -103,6 +103,7 @@ democracynow.org
 demonoid.com
 demonoid.me
 demonoid.ph
+doodle.com
 disqus.com
 dnssec-tools.org
 dreamwidth.net
@@ -246,6 +247,8 @@ ted.com
 thedailyshow.com
 theinfosphere.org
 theonion.com
+thepiratebay.org
+thepiratebay.se
 theregister.co.uk
 time.gov
 titlenine.com
@@ -788,6 +791,7 @@ thedailyshow.com|mtvnimages.com
 thedailyshow.com|mtvnservices.com
 theonion.com|onionstatic.com
 thephoenix.com|phx.com
+thepiratebay.se|thepiratebay.org
 theregister.co.uk|regmedia.co.uk
 thesocietypages.org|blogspot.com
 time.com|timeinc.net
@@ -825,6 +829,7 @@ wikipedia.com|wikipedia.org
 wikipedia.org|wikimedia.org
 wiktionary.org|wikimedia.org
 wordpress.com|cloudfront.net
+wordpress.com|feedburner.com
 wordpress.com|wp.com
 wp.com|wordpress.com
 wp.me|wordpress.com
