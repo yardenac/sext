@@ -25,6 +25,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://www.eff.org/files/https-everywhere-3.0development.5.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.4.8-fx+fn+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/387429/reddit_enhancement_suite-4.1.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.27-fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/8016/show_my_password-2.0-fx+sm.xpi"
@@ -46,6 +47,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"a48459472fdc5a9d6f1eb940ba42053d"	# https everywhere
 			"08c972d9d837c1049db284eb2a05f0dd"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
+			"0eb02f815a252699be7c6fbd6dd1fa35"	# reddit enhancement suite
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
 			"f772e5c1ac31706a3211d0d4bab190a3"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
