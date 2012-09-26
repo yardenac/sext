@@ -1,9 +1,9 @@
 pkgname=sext
 pkgver=0.$(date +%s)
 pkgrel=1
-ver_sm=2.11 #seamonkey
-ver_go=14.0 #gecko
-ver_ff=14.0.1 #firefox
+ver_sm=2.12.1 #seamonkey
+ver_go=15.0 #gecko
+ver_ff=15.0.1 #firefox
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
