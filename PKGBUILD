@@ -11,25 +11,6 @@ makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
 pastvers=(2.5 2.6 2.6.1 2.7 2.7.1 2.7.2 2.8 2.9 2.10 2.11)
-extensions=("{b0e1b4a6-2c6f-4e99-94f2-8e625d7ae255}"
-				"{d40f5e7b-d2cf-4856-b441-cc613eeffbe3}"
-				"{57068FBE-1506-42ee-AB02-BD183E7999E4}"
-				"{9D23D0AA-D8F5-11DA-B3FC-0928ABF316DE}"
-				"cookieSwap@cookieSwap.mozdev.org.xpi"
-				"copy-pure-text@kashiif-gmail.com"
-				"duplicate-this-tab@mozilla.org"
-				"{19503e42-ca3c-4c27-b1e2-9cdb2170ee34}"
-				"foxyproxy@eric.h.jung"
-				"{ea61041c-1e22-4400-99a0-aea461e69d04}"
-				"https-everywhere@eff.org"
-				"{73a6fe31-595d-460b-a920-fcc0f8843232}"
-				"{35106bca-6c78-48c7-ac28-56df30b51d2c}"
-				"{455D905A-D37C-4643-A9E2-F6FEFAA0424A}"
-				"requestpolicy@requestpolicy.com"
-				"{cd617372-6743-4ee4-bac4-fbf60f35719e}"
-				"trackmenot@mrl.nyu.edu"
-				"{e968fc70-8f95-4ab9-9e79-304de2a71ee1}")
-themes=({122352a8-6caf-46ca-998c-784e320cad7c})
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1865/adblock_plus-2.1.2-sm+an+fx+tb.xpi"
@@ -85,7 +66,7 @@ build() {
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm ffdir=$pkgdir/usr/lib/firefox
 	 local smprof=$smdir/defaults/profile ffprof=$ffdir/defaults/profile
-	 local xpi section extension theme n=0
+	 local xpi section
 	 mkdir -p $smdir/extensions $ffdir/extensions $ffdir/defaults/profile
 	 for xpi in $srcdir/*.xpi; do
 		  echo "Fixing $(basename "$xpi") ..."
@@ -134,19 +115,6 @@ package() {
 		  rps_section cookies-full | to_cookietype 1
 		  echo "COMMIT;"
 	 } | sqlite3 $smprof/permissions.sqlite
-
-	 {
-		  echo '[ExtensionDirs]'
-		  n=0; for extension in "${extensions[@]}"; do
-				echo "Extension$n=/usr/lib/seamonkey-$ver_sm/extensions/$extension.xpi"
-				let ++n
-		  done
-		  echo $'\n[Themedirs]'
-		  n=0; for theme in "${themes[@]}"; do
-				echo "Extension$n=/usr/lib/seamonkey-$ver_sm/themes/$theme.xpi"
-				let ++n
-		  done
-	 } >| $smprof/extensions.ini
 
 	 # awful hack until fix-extension can deal with commented-out fields!
 	 betterprivacy="$smdir/extensions/{d40f5e7b-d2cf-4856-b441-cc613eeffbe3}.xpi"
