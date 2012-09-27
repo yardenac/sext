@@ -12,18 +12,19 @@ depends=(seamonkey=$ver_sm)
 install=install
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://www.mirrorservice.org/sites/downloads.mozdev.org/xsidebar/mods/abduction!-2.026-mod.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/1865/adblock_plus-2.1.1-sm+tb+an+fx.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/1865/adblock_plus-2.1.2-sm+an+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/6623/betterprivacy-1.68-fx.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/1368/colorfultabs-16.2-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/311084/cookiesafe_ff_4_compatible-3.1a5-sm+tb+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/3255/cookieswap-0.5.284-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/156490/duplicate_this_tab-1.3-fx+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.7-fx+sm+tb.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.8.2-tb+fx+sm.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.6.2-sm+tb+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/337195/google_privacy-0.2.1-fx+sm.xpi"
-		  "https://www.eff.org/files/https-everywhere-3.0development.5.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.4.8-fx+fn+sm.xpi"
+		  "https://www.eff.org/files/https-everywhere-3.0development.7.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.5.6-sm+fx+fn.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.27-fx+sm.xpi"
@@ -33,25 +34,26 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 noextract=("${source[@]##*/}")
 md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"94edd4b7cf9ecff3f00d2676739ab919"	# abduction
-			"8985559c48882fc463a27dc34606d769"	# adblock plus
+			"4693cca56c4811080b1a9e13fad0e085"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
+			"0f2a3885613a2d24bf032cddd0433440"	# colorfultabs
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
 			"5b99c2c66a39e358aa64ae368a67d475"	# cookiesafe
 			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
-			"e90820dea4f59301fddc9f191642c505"	# flashgot
+			"01c2400e040a722842e255d9dab85e37"	# flashgot
 			"c84a71a4961b6608eaa9652375706b16"	# foxyproxy
 			"c9410748ba428b4a723392e86bc646c0"	# google privacy
-			"a48459472fdc5a9d6f1eb940ba42053d"	# https everywhere
-			"08c972d9d837c1049db284eb2a05f0dd"	# noscript
+			"dada8e1592b0a981cb8860f4588dfad6"	# https everywhere
+			"63536cbbacd432694369af5bfcde261e"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
 			"f772e5c1ac31706a3211d0d4bab190a3"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: July 21 2012
+# last checked for updates: Sep 26 2012
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
