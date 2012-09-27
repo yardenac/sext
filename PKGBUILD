@@ -15,7 +15,6 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1865/adblock_plus-2.1.2-sm+an+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/6623/betterprivacy-1.68-fx.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/1368/colorfultabs-16.2-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/311084/cookiesafe_ff_4_compatible-3.1a5-sm+tb+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/3255/cookieswap-0.5.284-fx.xpi"
@@ -37,7 +36,6 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"969fb1037482120a1d81ae0253e36319"	# abduction
 			"4693cca56c4811080b1a9e13fad0e085"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
-			"0f2a3885613a2d24bf032cddd0433440"	# colorfultabs
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
 			"5b99c2c66a39e358aa64ae368a67d475"	# cookiesafe
 			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
