@@ -10,6 +10,7 @@ license=('GPL')
 makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
+pastvers=(2.5 2.6 2.6.1 2.7 2.7.1 2.7.2 2.8 2.9 2.10 2.11)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1865/adblock_plus-2.1.2-sm+an+fx+tb.xpi"
@@ -57,6 +58,11 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
+build() {
+	 sed -i \
+		  -e "s/^\(ver_sm=\).*$/\1$ver_sm/" \
+		  -e "s/^\(pastvers=\).*$/\1(${pastvers[*]})/" $startdir/install
+}
 package() {
 	 local smdir=$pkgdir/usr/lib/seamonkey-$ver_sm ffdir=$pkgdir/usr/lib/firefox
 	 local smprof=$smdir/defaults/profile ffprof=$ffdir/defaults/profile
