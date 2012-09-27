@@ -11,7 +11,7 @@ makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
-		  "http://www.mirrorservice.org/sites/downloads.mozdev.org/xsidebar/mods/abduction!-2.026-mod.xpi"
+		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1865/adblock_plus-2.1.2-sm+an+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/6623/betterprivacy-1.68-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1368/colorfultabs-16.2-sm+fx.xpi"
@@ -33,7 +33,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/59/user_agent_switcher-0.7.3-fx+sm.xpi")
 noextract=("${source[@]##*/}")
 md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
-			"94edd4b7cf9ecff3f00d2676739ab919"	# abduction
+			"969fb1037482120a1d81ae0253e36319"	# abduction
 			"4693cca56c4811080b1a9e13fad0e085"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
 			"0f2a3885613a2d24bf032cddd0433440"	# colorfultabs
