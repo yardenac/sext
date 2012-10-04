@@ -117,6 +117,7 @@ ebayrtm.com
 ebaystatic.com
 elance.com
 etimspayments.com
+everytimezone.com
 evite.com
 expedia.com
 facebook.com
@@ -507,6 +508,7 @@ bbcimg.co.uk
 blogcdn.com
 blogspot.com
 fastpic.ru
+feedburner.com
 flickr.com
 fsdn.com
 gawkerassets.com
@@ -529,6 +531,8 @@ twimg.com
 typekit.com
 verisign.com
 weblogimages.com
+wordpress.com
+wp.com
 wsimg.com
 yahooapis.com
 yelpcdn.com
@@ -652,7 +656,6 @@ kpbs.org|npr.org
 libraryreserve.com|overdrive.com
 livejournal.com|cakewrecks.com
 livejournal.com|dreamwidth.org
-livejournal.com|feedburner.com
 livejournal.com|google.com
 livejournal.com|livejournal.net
 livejournal.com|lj-toys.com
@@ -829,10 +832,6 @@ wikipedia.com|wikipedia.org
 wikipedia.org|wikimedia.org
 wiktionary.org|wikimedia.org
 wordpress.com|cloudfront.net
-wordpress.com|feedburner.com
-wordpress.com|wp.com
-wp.com|wordpress.com
-wp.me|wordpress.com
 wsimg.com|secureserver.net
 wsj.com|wsj.net
 wunderground.com|wxug.com
