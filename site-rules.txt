@@ -136,6 +136,7 @@ fsdn.com
 gaug.es
 geeks.com
 github.com
+gitorious.org
 gmodules.com
 gnu.org
 godaddy.com
