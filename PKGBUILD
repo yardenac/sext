@@ -20,11 +20,11 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/3255/cookieswap-0.5.284-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/156490/duplicate_this_tab-1.3-fx+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.8.2-tb+fx+sm.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-3.6.2-sm+tb+fx.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/220/flashgot-1.4.8.3-sm+fx+tb.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/2464/foxyproxy_standard-4.0.1-tb+sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/337195/google_privacy-0.2.1-fx+sm.xpi"
 		  "https://www.eff.org/files/https-everywhere-3.0development.7.xpi"
-		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.5.6-sm+fx+fn.xpi"
+		  "http://releases.mozilla.org/pub/mozilla.org/addons/722/noscript-2.5.7-fx+sm+fn.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/9727/requestpolicy-0.5.27-fx+sm.xpi"
@@ -41,18 +41,18 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
-			"01c2400e040a722842e255d9dab85e37"	# flashgot
-			"c84a71a4961b6608eaa9652375706b16"	# foxyproxy
+			"538be6d43a3e30bd804650e14765b43f"	# flashgot
+			"7c7ad2c4b74d9fe0ec48d09af393097f"	# foxyproxy
 			"c9410748ba428b4a723392e86bc646c0"	# google privacy
 			"dada8e1592b0a981cb8860f4588dfad6"	# https everywhere
-			"63536cbbacd432694369af5bfcde261e"	# noscript
+			"2e1e17ed23355abb6d2747a3a2f90649"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
 			"f772e5c1ac31706a3211d0d4bab190a3"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: Sep 26 2012
+# last checked for updates: Oct 11 2012
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
