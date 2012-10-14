@@ -175,6 +175,8 @@ kernel.org
 kohls.com
 librarything.com
 libraryreserve.com
+licdn.com
+linkedin.com
 linode.com
 livejournal.com
 live.com
@@ -655,6 +657,8 @@ khanacademy.org|khan-academy.appspot.com
 kpbs.org|ellingtoncms.com
 kpbs.org|npr.org
 libraryreserve.com|overdrive.com
+licdn.com|linkedin.com
+linkedin.com|licdn.com
 livejournal.com|cakewrecks.com
 livejournal.com|dreamwidth.org
 livejournal.com|google.com
