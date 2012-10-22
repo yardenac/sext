@@ -117,6 +117,8 @@ ebayrtm.com
 ebaystatic.com
 elance.com
 etimspayments.com
+etsy.com
+etsystatic.com
 everytimezone.com
 evite.com
 expedia.com
@@ -157,6 +159,7 @@ hulu.com
 huluim.com
 images-amazon.com
 imdb.com
+imgur.com
 ingdirect.com
 insanejournal.com
 insidebayarea.com
@@ -605,6 +608,7 @@ ebay.com|ebayimg.com
 ebay.com|ebayrtm.com
 ebay.com|ebaystatic.com
 ehow.com|ehowcdn.com
+etsy.com|etsystatic.com
 evite.com|google.com
 facebook.com|akamaihd.net
 facebook.com|fbcdn.net
@@ -849,3 +853,4 @@ yelp.com|yelpcdn.com
 yelpcdn.com|yelp.com
 youtube.com|google.com
 zappos.com|zassets.com
+zazzle.com|zcache.com
