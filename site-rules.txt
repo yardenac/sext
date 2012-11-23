@@ -79,6 +79,7 @@ bing.com
 bitbucket.org
 blip.tv
 blogger.com
+blogspot.ca
 blogspot.com
 braodcom.com
 brightcove.com
@@ -211,6 +212,7 @@ okcimg.com
 okcupid.com
 onionstatic.com
 overdrive.com
+passthepopcorn.me
 paypal.com
 paypalobjects.com
 piratepad.net
@@ -226,6 +228,7 @@ recaptcha.net
 reddit.com
 redditstatic.com
 rhapsody.com
+riseup.net
 rollingrelease.com
 rsync.net
 santacruzpl.org
@@ -421,6 +424,7 @@ notifymyandroid.com
 nytimes.com
 okcupid.com
 pageturnereditions.com
+passthepopcorn.me
 paypal.com
 piratepad.net
 piratenpad.de
@@ -430,6 +434,7 @@ progressive.com
 radioshack.com
 reddit.com
 renebooks.com
+riseup.net
 riteav.com
 rollingrelease.com
 rsync.net
@@ -574,6 +579,9 @@ bitbucket.org|cloudfront.net
 blogger.com|blogblog.com
 blogsmithmedia.com|aolcdn.com
 blogsmithmedia.com|aoltv.com
+blogspot.ca|blogblog.com
+blogspot.ca|blogger.com
+blogspot.ca|google.com
 blogspot.com|blogblog.com
 blogspot.com|blogger.com
 blogspot.com|google.com
@@ -608,6 +616,7 @@ ebay.com|ebayimg.com
 ebay.com|ebayrtm.com
 ebay.com|ebaystatic.com
 ehow.com|ehowcdn.com
+engadget.com|blogsmithmedia.com
 etsy.com|etsystatic.com
 evite.com|google.com
 facebook.com|akamaihd.net
@@ -736,6 +745,10 @@ overdrive.com|contentreserve.com
 overdrive.com|libraryreserve.com
 overstock.com|ostkcdn.com
 panoramio.com|google.com
+passthepopcorn.me|imgit.me
+passthepopcorn.me|minus.com
+passthepopcorn.me|ptpimg.me
+passthepopcorn.me|whatimg.com
 paypal.com|ebaystatic.com
 paypal.com|newegg.com
 paypal.com|paypal-search.com
