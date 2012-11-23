@@ -23,7 +23,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot-1.4.8.6-sm+fx+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/2464/foxyproxy_standard-4.1-fx+tb+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/337195/google_privacy-0.2.3-sm+fx.xpi"
-		  "https://www.eff.org/files/https-everywhere-3.0development.7.xpi"
+		  "https://www.eff.org/files/https-everywhere-4.0development.2.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/722/noscript-2.6.2-sm+fn+fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "http://releases.mozilla.org/pub/mozilla.org/addons/953/refcontrol-0.8.16-sm+fx.xpi"
@@ -44,7 +44,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"afb98a2e91d923996de9fe553f21526d"	# flashgot
 			"47029c40d1c6f17a442ef1548af0b599"	# foxyproxy
 			"f441d80dacc34d33f8b7d369c9191ec8"	# google privacy
-			"dada8e1592b0a981cb8860f4588dfad6"	# https everywhere
+			"80ea4e897c731d7a8ae97ab0450899e6"	# https everywhere
 			"7202dc2e165a166943de0d5696800972"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
