@@ -30,7 +30,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://addons.cdn.mozilla.net/storage/public-staging/9727/requestpolicy-0.5.27-fx+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/8016/show_my_password-2.0-fx+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/3173/trackmenot-0.6.728-fx+sm.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/59/user_agent_switcher-0.7.3-fx+sm.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/59/user_agent_switcher-0.7.3-fx+sm.xpi")
 noextract=("${source[@]##*/}")
 md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"969fb1037482120a1d81ae0253e36319"	# abduction
