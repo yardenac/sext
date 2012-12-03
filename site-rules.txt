@@ -247,6 +247,7 @@ stackauth.com
 stackexchange.com
 stackoverflow.com
 stanford.edu
+sudoroom.org
 superuser.com
 target.com
 targetimg1.com
@@ -448,6 +449,7 @@ slashdot.org
 ssl-images-amazon.com
 stackexchange.com
 stackoverflow.com
+sudoroom.org
 superuser.com
 titlenine.com
 transmissionbt.com
@@ -463,6 +465,7 @@ vr.org
 wheresgeorge.com
 wikia.com
 wikimedia.org
+wikipedia.org
 wordpress.com
 yelp.com
 zappos.com
@@ -515,6 +518,7 @@ wapo.st
 youtu.be
 [destinations]
 afreeimagehost.com
+ajax.googleapis.com
 amazonaws.com
 bbcimg.co.uk
 blogcdn.com
