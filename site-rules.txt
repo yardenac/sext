@@ -203,6 +203,7 @@ mtvnservices.com
 myopenid.com
 newegg.com
 neweggimages.com
+noisebridge.net
 notifymyandroid.com
 nyt.com
 nytimes.com
@@ -400,6 +401,7 @@ facebook.com
 fetlife.com
 flashtux.org
 github.com
+gitorious.org
 gnu.org
 goodreads.com
 google.com
@@ -421,6 +423,7 @@ macmall.com
 mplayerhq.hu
 myopenid.com
 newegg.com
+noisebridge.net
 notifymyandroid.com
 nytimes.com
 okcupid.com
@@ -519,6 +522,7 @@ youtu.be
 [destinations]
 afreeimagehost.com
 ajax.googleapis.com
+fonts.googleapis.com
 amazonaws.com
 bbcimg.co.uk
 blogcdn.com
