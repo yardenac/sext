@@ -287,6 +287,8 @@ vzw.com
 w3scohols.com
 weechat.org
 wheresgeorge.com
+wikia.com
+wikia-beacon.com
 wikimedia.org
 wikipedia.org
 wiktionary.org
@@ -854,7 +856,9 @@ westfield.com|atwestfield.com
 wheresgeorge.com|google.com
 wheresgeorge.com|wheresgeorge.net
 whygitisbetterthanx.com|twictur.es
+wikia.com|cloudfront.net
 wikia.com|nocookie.net
+wikia.com|wikia-beacon.com
 wikibooks.org|wikimedia.org
 wikihow.com|whstatic.com
 wikimedia.org|toolserver.org
