@@ -1,0 +1,111 @@
+#!/bin/bash
+
+# this needs to recognize commented-out fields!
+# became a problem for betterprivacy 1.68
+
+. /usr/share/ppz/bash.functions
+
+[ "$1" ] && [ "$2" ] && \
+	 xpi=$(full_path_strict "$1") && \
+	 xpj=$(full_path_strict "$2") && \
+	 is zip "$xpi" && [ -d "$xpj" ] || \
+	 croak "USAGE: fix-extension original.xpi /dir/for/fixed/"
+
+# remove any trailing slash
+xpj=${xpj%/}
+
+# figure out the right namespace strings to pass to xmlstarlet
+tmprdf=/tmp/.$(uniq_token).rdf
+trap "rm -rf ${tmprdf}; exit;" EXIT HUP QUIT INT TERM ABRT TSTP CONT
+unzip -qp "$xpi" install.rdf > $tmprdf
+xmlns-args $tmprdf
+
+# get the unique id string and use it to create new file (xpj)
+mainr_xpath="//${defns}Description[@about='urn:mozilla:install-manifest'] | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']"
+idstr_xpath="//${defns}Description[@about='urn:mozilla:install-manifest']/em:id | //${defns}Description[@about='urn:mozilla:install-manifest']/@em:id | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/@em:id | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/em:id"
+unpak_xpath="//${defns}Description[@about='urn:mozilla:install-manifest']/em:unpack | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/@em:unpack | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/em:unpack"
+if idstr=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$idstr_xpath"); then
+	 [[ "$idstr" =~ [a-zA-Z0-9\.{}@_-]{15,60} ]] || croak "This extension has a WEIRD id string."
+
+	 [ -a "$xpj/$idstr" ] || [ -a "$xpj/$idstr.xpi" ] && {
+		  echo "Already exists: $xpj"
+		  askyn "Overwrite it?" || croak "Failing, won't overwrite existing file."
+	 }
+
+	 # leave as zip or unpack?
+	 if unpak=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$unpak_xpath") && [ "$unpak" = true ]; then
+		  export dtype=dir
+		  export xpj=$xpj/$idstr
+		  mkdir -p "$xpj"
+		  unzip -q "$xpi" -d "$xpj/"
+	 else
+		  export dtype=zip
+		  export xpj=$xpj/$idstr.xpi
+		  cp "$xpi" "$xpj"
+	 fi
+else
+	 croak "Could not find a valid ID string in the manifest. Something is wrong."
+fi
+
+# update internal path in new one, from pipe
+# (whether extracted or not)
+toxpj() {
+	 case $dtype in
+		  zip)	cat <&0 | rezip "$xpj" "$1";;
+		  dir)	cat <&0 >| "$xpj/$1";;
+	 esac
+}
+
+# check for seamonkey maxversion
+newst=2.19
+maxver_xpath="//*[@em:id='{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}']/@em:maxVersion | //*[em:id='{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}']/em:maxVersion"
+if verst=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$maxver_xpath"); then
+	 # a seamonkey clause exists!
+	 case $verst in
+		  2.\*|2.16|2.16.\*|2.17a1|2.17a2|2.17|2.17.\*|2.18a1|2.18a2|2.18|2.18.\*|2.19a1|2.19a2|2.19|3.0.\*|99.\*)
+#				echo_green "This plugin is already compatible with latest stable :)"
+				:;;
+		  1.0a|1.0|1.0.\*|1.1a|1.1b|1.1|1.1.\*|1.5a|2.0a|2.0a1pre|2.0a1|2.0a2pre) :;&
+		  2.0a2|2.0a3pre|2.0a3|2.0b1pre|2.0b1|2.0b2pre|2.0b2|2.0pre|2.0|2.0.1) :;&
+		  2.0.\*|2.1a1pre|2.1a1|2.1a2pre|2.1a2|2.1a3pre|2.1a3|2.1b1pre|2.1b1) :;&
+		  2.1b2pre|2.1b2|2.1b3pre|2.1b3|2.1|2.1.\*|2.2a1pre|2.2|2.2.\*|2.3a2|2.3) :;&
+		  2.3.\*|2.4a1|2.4a2|2.4|2.4.\*|2.5a1|2.5a2|2.5|2.5.\*|2.6.\*|2.6a1|2.6a2|2.6) :;&
+		  2.6.1|2.7a1|2.7a2|2.7|2.7.1|2.7.2|2.7.\*|2.8a1|2.8a2|2.8|2.8.\*|2.9a1|2.9a2) :;&
+		  2.9|2.9.\*|2.10a1|2.10a2|2.10|2.10.\*|2.11a1|2.11a2|2.11|2.11.\*|2.12a1|2.12a2) :;&
+		  2.12|2.12.\*|2.13a1|2.13a2|2.13|2.13.1|2.13.2|2.13.\*|2.14a1|2.14a2|2.14) :;&
+		  2.14.1|2.14.\*|2.15a1|2.15a2|2.15|2.15.1|2.15.2|2.15.\*|2.16a1|2.16a2)
+				echo_green "Bumping from $verst to $newst"
+				unzip -qp "$xpi" install.rdf \
+					 | xml ed -P -u "$maxver_xpath" -v $newst \
+					 | toxpj install.rdf
+				;;
+		  *) echo_red "Unrecognized version string: $verst";;
+	 esac
+else
+	 echo_green "Adding Seamonkey to install.rdf"
+	 u=%$(uniq_token)%
+	 unzip -qp "$xpi" install.rdf \
+		  | xml ed $ns -s "$mainr_xpath" -t elem -n 'em:targetApplication' -v $u \
+		  | sed s_${u}_'\
+				<!-- Seamonkey - added by script! -->\
+				<Description>\
+					<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>\
+					<em:minVersion>2.0a1pre</em:minVersion>\
+					<em:maxVersion>'$newst'</em:maxVersion>\
+				</Description>\n'_ig \
+		  | toxpj install.rdf
+
+	 echo_green "Adding navigator overlay to chrome.manifest"
+	 unzip -qp "$xpi" chrome.manifest \
+		  | awk '
+				{print}
+				/^overlay/ {
+					if ($2 == "chrome://browser/content/browser.xul") {
+						$2 = "chrome://navigator/content/navigator.xul"
+						print
+					}
+				}' \
+			| uniq \
+			| toxpj chrome.manifest
+fi
+
