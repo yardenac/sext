@@ -10,7 +10,7 @@ license=('GPL')
 makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
-pastvers=(2.5 2.6 2.6.1 2.7 2.7.1 2.7.2 2.8 2.9 2.10 2.11 2.12.1 2.13 2.13.1 2.13.2 2.14 2.14.1 2.15.1 2.15.2 2.16)
+pastvers=(2.16)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.2.3-tb+an+sm+fx.xpi"
