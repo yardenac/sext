@@ -5,11 +5,21 @@
 
 . /usr/share/ppz/bash.functions
 
-[ "$1" ] && [ "$2" ] && \
-	 xpi=$(full_path_strict "$1") && \
-	 xpj=$(full_path_strict "$2") && \
-	 is zip "$xpi" && [ -d "$xpj" ] || \
-	 croak "USAGE: fix-extension original.xpi /dir/for/fixed/"
+for arg; do
+	 if item=$(full_path_strict "$arg"); then
+		  if [ -d "$item" ]; then
+				xpj="$item"
+		  elif is jar "$item"; then
+				xpi="$item"
+		  elif is zip "$item"; then
+				xpi="$item"
+		  else
+				echo_red "Not an xpi or dir: $item"
+		  fi
+	 else
+		  echo_red "Unknown option: $item"
+	 fi
+done
 
 # remove any trailing slash
 xpj=${xpj%/}
