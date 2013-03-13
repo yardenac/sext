@@ -13,13 +13,19 @@
   </quickadd>
   <defaultPrefs origPrefetch="17"/>
   <proxies>
+	 <proxy name="SSH" id="1119809376" notes="" enabled="true" mode="manual" selectedTabIndex="1" lastresort="false" animatedIcons="true" includeInCycle="true" color="#E60099" proxyDNS="true" noInternalIPs="false">
+		<matches/>
+		<autoconf url="" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
+		<autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
+		<manualconf host="127.0.0.1" port="55114" socksversion="5" isSocks="true"/>
+	 </proxy>
 	 <proxy name="Privoxy/Tor" id="1119809376" notes="" enabled="true" mode="manual" selectedTabIndex="1" lastresort="false" animatedIcons="true" includeInCycle="true" color="#0055E5" proxyDNS="true" noInternalIPs="false">
 		<matches/>
 		<autoconf url="" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
 		<autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
 		<manualconf host="127.0.0.1" port="8118" socksversion="5" isSocks="false"/>
 	 </proxy>
-	 <proxy name="Default" id="3747610215" notes="These are the settings that are used when no patterns match a URL." enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="true" color="#0055E5" proxyDNS="true" noInternalIPs="false">
+	 <proxy name="Default" id="3747610215" notes="These are the settings that are used when no patterns match a URL." enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="true" color="#FF0000" proxyDNS="true" noInternalIPs="false">
 		<matches>
 		  <match enabled="true" name="All" pattern="*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
 		</matches>
