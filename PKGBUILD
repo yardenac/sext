@@ -16,7 +16,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.2.3-tb+an+sm+fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/6623/betterprivacy-1.68-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/311084/cookiesafe_ff_4_compatible-3.1a5-sm+tb+fx.xpi"
+		  "https://s3.amazonaws.com/yardena/cookiesafe_ff_4_compatible-3.1a5-sm%2Btb%2Bfx-preconverted.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/3255/cookieswap-0.5.284-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/156490/duplicate_this_tab-1.3-fx+sm.xpi"
@@ -37,7 +37,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"07607a3cb349eeccfc7768b5f4f2aaae"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
-			"5b99c2c66a39e358aa64ae368a67d475"	# cookiesafe
+			"dbcff4020657e654212c7f6aa7959459"	# cookiesafe
 			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
