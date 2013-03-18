@@ -1,7 +1,7 @@
 pkgname=sext
 pkgver=0.$(date +%s)
 pkgrel=1
-ver_sm=2.16.1 #seamonkey
+ver_sm=2.16.2 #seamonkey
 ver_go=19.0 #gecko
 ver_ff=19.0.2 #firefox
 pkgdesc="Altered seamonkey extensions"
@@ -10,7 +10,7 @@ license=('GPL')
 makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
-pastvers=(2.16)
+pastvers=(2.16 2.16.1)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.2.3-tb+an+sm+fx.xpi"
@@ -52,7 +52,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: Mar 12 2013
+# last checked for updates: Mar 17 2013
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!

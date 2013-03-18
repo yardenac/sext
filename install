@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ver_sm=2.16.1
-pastvers=(2.16)
+ver_sm=2.16.2
+pastvers=(2.16 2.16.1)
 
 post_install() {
 	 /bin/cp -rf usr/lib/seamonkey-$ver_sm/defaults/profile/localstore.rdf{.sxt,}
