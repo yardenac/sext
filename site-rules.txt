@@ -266,6 +266,7 @@ time.gov
 titlenine.com
 transmissionbt.com
 travelocity.com
+trovebox.com
 tumblr.com
 turner.com
 tvtorrents.com
@@ -459,6 +460,7 @@ superuser.com
 titlenine.com
 transmissionbt.com
 transunion.com
+trovebox.com
 tumblr.com
 tvtorrents.com
 twitter.com
@@ -834,6 +836,8 @@ time.com|timeinc.net
 timeout.com|timeoutnewyork.com
 tl.gd|twitlonger.com
 transmissionbt.com|google.com
+trovebox.com|cloudfront.net
+trovebox.com|openphoto.me
 twitpic.com|cloudfront.net
 twitpic.com|twimg.com
 twitter.com|akamaihd.net
