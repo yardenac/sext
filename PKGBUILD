@@ -17,7 +17,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://addons.cdn.mozilla.net/storage/public-staging/6623/betterprivacy-1.68-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "https://addons.cdn.mozilla.net/_files/311084/cookiesafe_cookies_verwalten-3.1-fx+sm+tb.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/3255/cookieswap-0.5.284-fx.xpi"
+		  "https://addons.cdn.mozilla.net/_files/3255/cookieswap-13.4.331-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/156490/duplicate_this_tab-1.3-fx+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot-1.5.5.2-sm+fx+tb.xpi"
@@ -38,7 +38,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
 			"6bda863d544efe0d876e29fea2f3fcc7"	# cookiesafe
-			"3bdc81f16f06a70968ec41792f4dd93e"	# cookieswap
+			"126d6abde9b02efeec82dc4af2354444"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
 			"b65f470edc99ea039d86e142654922e9"	# flashgot
