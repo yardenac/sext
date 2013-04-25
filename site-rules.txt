@@ -134,6 +134,7 @@ fetlife.com
 flashtux.org
 flysfo.com
 forvo.com
+freedesktop.org
 freshmeat.net
 fsdn.com
 gaug.es
@@ -403,6 +404,7 @@ experian.com
 facebook.com
 fetlife.com
 flashtux.org
+freedesktop.org
 github.com
 gitorious.org
 gnu.org
