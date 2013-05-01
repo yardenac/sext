@@ -202,6 +202,7 @@ msn.com
 mtv.com
 mtvnservices.com
 myopenid.com
+namecheap.com
 newegg.com
 neweggimages.com
 noisebridge.net
@@ -427,6 +428,7 @@ localhost
 macmall.com
 mplayerhq.hu
 myopenid.com
+namecheap.com
 newegg.com
 noisebridge.net
 notifymyandroid.com
