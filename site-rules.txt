@@ -140,6 +140,7 @@ fsdn.com
 gaug.es
 geeks.com
 github.com
+githubapp.com
 gitorious.org
 gmodules.com
 gnu.org
@@ -151,6 +152,7 @@ google.com
 google.co.uk
 googleusercontent.com
 gstatic.com
+haskell.org
 hirstory.com
 hover.com
 hp.com
@@ -645,7 +647,9 @@ forvo.com|google.com
 geeks.com|geeksimages.com
 github.com|akamai.net
 github.com|cloudfront.net
+github.com|fastly.net
 github.com|gaug.es
+github.com|githubapp.com
 github.com|newrelic.com
 github.com|skitch.com
 gmail.com|google.com
