@@ -13,46 +13,46 @@ install=install
 pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.2.4-tb+fx+sm+an.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.3.2-fx+tb+sm+an.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/6623/betterprivacy-1.68-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "https://addons.cdn.mozilla.net/_files/311084/cookiesafe_cookies_verwalten-3.1-fx+sm+tb.xpi"
 		  "https://addons.cdn.mozilla.net/_files/3255/cookieswap-13.4.331-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/156490/duplicate_this_tab-1.3-fx+sm.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot_mass_downloader-1.5.5.5-tb+fx+sm.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/2464/foxyproxy_standard-4.2.1-tb+fx+sm.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot_mass_downloader-1.5.5.6-fx+sm+tb.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/2464/foxyproxy_standard-4.2.2-fx+tb+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/337195/google_privacy-0.2.3-sm+fx.xpi"
-		  "https://www.eff.org/files/https-everywhere-4.0development.8.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/722/noscript_security_suite-2.6.6.8-fx+fn+sm.xpi"
+		  "https://www.eff.org/files/https-everywhere-4.0development.10.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/722/noscript_security_suite-2.6.7.1-sm+fn+fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/953/refcontrol-0.8.16-sm+fx.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/9727/requestpolicy-0.5.27-fx+sm.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/9727/requestpolicy-0.5.28-sm+fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/8016/show_my_password-2.0-fx+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/3173/trackmenot-0.6.728-fx+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/59/user_agent_switcher-0.7.3-fx+sm.xpi")
 noextract=("${source[@]##*/}")
 md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"969fb1037482120a1d81ae0253e36319"	# abduction
-			"0ce162b71d2398b46f4e8cc4ddd64cbb"	# adblock plus
+			"1d062796a5ff05d60f20a97677edd437"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
 			"6bda863d544efe0d876e29fea2f3fcc7"	# cookiesafe
 			"126d6abde9b02efeec82dc4af2354444"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
-			"1788384739bfd12b9c64673d3afeba2b"	# flashgot
-			"2682f9301b11cb566a1f9b3526d486be"	# foxyproxy
+			"1ac9b55c44f5dd97549578711896f4ff"	# flashgot
+			"3dcca42bf5ebd5203308885f3ce0196c"	# foxyproxy
 			"f441d80dacc34d33f8b7d369c9191ec8"	# google privacy
-			"beeddc635213b23cd55f30b642f1839d"	# https everywhere
-			"dfc699a3b8bb18704c1765f8b3ea1da8"	# noscript
+			"c28d4f455e32aa588b585b8780a06e4d"	# https everywhere
+			"fcc2cbd8792d215604e3fe89847bc936"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
-			"f772e5c1ac31706a3211d0d4bab190a3"	# requestpolicy
+			"c525980cf267c310ea22ba3ddb9be1de"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: Jul 16 2013
+# last checked for updates: Aug 29 2013
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
