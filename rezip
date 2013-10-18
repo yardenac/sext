@@ -1,0 +1,26 @@
+#!/usr/bin/bash
+#
+# updates a zip file from stdin
+#
+# USAGE: cat new_file_contents | rezip zipfile.zip internal/path/to/new_file
+
+. /usr/share/ppz/bash.functions
+
+zipfile="$1"
+zpath="$2"
+is zip "$zipfile" || is jar "$zipfile" || exit 1
+[[ "$zpath" =~ \.\./ ]] && exit 1
+while :; do
+	 td=/tmp/$(uniq_token)
+	 mkdir -p $td && break
+done
+pushd $td &>/dev/null
+trap "popd &>/dev/null; rm -rf $td; exit;" EXIT HUP QUIT INT TERM ABRT TSTP CONT
+
+#stuff inside tmpdir
+
+cp "$zipfile" $td/tmp.zip
+mkdir -p $td/"$(dirname "$zpath")"
+cat <&0 >| $td/"$zpath"
+zip -qf tmp.zip "$zpath"
+mv -f $td/tmp.zip "$zipfile"

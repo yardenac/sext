@@ -119,6 +119,6 @@ package() {
 	 tmpfile=/tmp/.bp.$(date +%s)
 	 unzip -qp "$betterprivacy" install.rdf >| $tmpfile
 	 sed 's/<!--\(em:targetApplication.*\)-->/<\1>/' $tmpfile \
-		  | rezip "$betterprivacy" install.rdf
+		  | $startdir/rezip "$betterprivacy" install.rdf
 	 rm -f "$tmpfile"
 }
