@@ -5,6 +5,43 @@
 
 . /usr/share/ppz/bash.functions
 
+good-xml() {
+	 is xml "$1" || return 1
+	 cat "$1" | xml val -w -q -e - || return 1
+}
+xmlns-args() { local xmlns prefix file IFS=$'\n'
+	 ns="" #namespace strings (pass to xml as -N)
+	 defns="" # default namespace prefix in xpaths
+
+	 good-xml "$1" && file=$1 || return 1
+
+	 # for every xmlns declaration in the file
+	 for xmlns in $(cat "$file" | grep -ioE 'xmlns(:[a-z0-9]+)?="[^"]*"' | sort -u); do
+#		  echo "DOING: $xmlns"
+		  # remove double-quotes
+		  xmlns=${xmlns//\"}
+
+		  if [ ${xmlns:5:1} = = ]; then
+				# it starts like xmlns=http://...
+				# so we set a "default namespace"
+				defns=defns:
+				xmlns=defns=${xmlns:6}
+		  else
+				# it starts like xmlns:foo=http://...
+				# so we remove 'xmlns:'
+				xmlns=${xmlns:6}
+				# if foo is rdf/RDF, make that the default prefix
+				prefix=${xmlns%%=*}
+				if [ ${prefix,,} = rdf ]; then
+					 defns=$prefix:
+				fi
+		  fi
+
+		  # add to namespace string
+		  ns=$ns" -N $xmlns"
+	 done
+}
+
 for arg; do
 	 if item=$(full_path_strict "$arg"); then
 		  if [ -d "$item" ]; then
