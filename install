@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ver_sm=2.21
-pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20)
+ver_sm=2.22
+pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20 2.21)
 
 post_install() {
 	 /bin/cp -rf usr/lib/seamonkey-$ver_sm/defaults/profile/localstore.rdf{.sxt,}
