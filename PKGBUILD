@@ -13,18 +13,18 @@ install=install
 pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20 2.21)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.3.2-fx+tb+sm+an.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.4-tb+fx+an+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/6623/betterprivacy-1.68-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "https://addons.cdn.mozilla.net/_files/311084/cookiesafe_cookies_verwalten-3.1-fx+sm+tb.xpi"
 		  "https://addons.cdn.mozilla.net/_files/3255/cookieswap-13.4.331-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/156490/duplicate_this_tab-1.3-fx+sm.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot_mass_downloader-1.5.5.92-tb+fx+sm.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/2464/foxyproxy_standard-4.2.2-fx+tb+sm.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot_mass_downloader-1.5.5.94-sm+fx+tb.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/2464/foxyproxy_standard-4.2.3-fx+tb+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/337195/google_privacy-0.2.3-sm+fx.xpi"
-		  "https://www.eff.org/files/https-everywhere-4.0development.12.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/722/noscript_security_suite-2.6.8.1-fx+sm+fn.xpi"
+		  "https://www.eff.org/files/https-everywhere-4.0development.13.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/722/noscript_security_suite-2.6.8.4-sm+fx+fn.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/1759/organize_status_bar-0.6.4-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/953/refcontrol-0.8.16-sm+fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/9727/requestpolicy-0.5.28-sm+fx.xpi"
@@ -34,25 +34,25 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 noextract=("${source[@]##*/}")
 md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"969fb1037482120a1d81ae0253e36319"	# abduction
-			"1d062796a5ff05d60f20a97677edd437"	# adblock plus
+			"3fe51813290a0d7103b620e2813a8c0e"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
 			"6bda863d544efe0d876e29fea2f3fcc7"	# cookiesafe
 			"126d6abde9b02efeec82dc4af2354444"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
-			"0773e5e64f5f6f799aaf107333dfdde6"	# flashgot
-			"3dcca42bf5ebd5203308885f3ce0196c"	# foxyproxy
+			"17c137d0208268055ca4a00c4b4ddd52"	# flashgot
+			"9e74181034e3b2362cd83cb91b996e7e"	# foxyproxy
 			"f441d80dacc34d33f8b7d369c9191ec8"	# google privacy
-			"082ee3f0879cf6cc01447a95887c862b"	# https everywhere
-			"955e4c5706a73977c09d7b4d0bc6dd9f"	# noscript
+			"4603adc9b6a5108631b824d7c998bf00"	# https everywhere
+			"3096cfcd43988c7a2f0caa031dc74d51"	# noscript
 			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
 			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
 			"c525980cf267c310ea22ba3ddb9be1de"	# requestpolicy
 			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
-# last checked for updates: Oct 2 2013
+# last checked for updates: Nov 5 2013
 # fireshot
 # proxy tool
 # beefree <-- breaks statusbar!
