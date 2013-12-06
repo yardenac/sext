@@ -53,9 +53,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"533d19c08df11939dbaa7f7952238ccf"	# track me not
 			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
 # last checked for updates: Nov 5 2013
-# fireshot
-# proxy tool
-# beefree <-- breaks statusbar!
+# https://addons.mozilla.org/EN-us/seamonkey/extensions/?sort=updated
 build() {
 	 sed -i \
 		  -e "s/^\(ver_sm=\).*$/\1$ver_sm/" \
