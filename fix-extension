@@ -71,7 +71,7 @@ xmlns-args $tmprdf
 mainr_xpath="//${defns}Description[@about='urn:mozilla:install-manifest'] | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']"
 idstr_xpath="//${defns}Description[@about='urn:mozilla:install-manifest']/em:id | //${defns}Description[@about='urn:mozilla:install-manifest']/@em:id | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/@em:id | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/em:id"
 unpak_xpath="//${defns}Description[@about='urn:mozilla:install-manifest']/em:unpack | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/@em:unpack | //${defns}Description[@${defns}about='urn:mozilla:install-manifest']/em:unpack"
-if idstr=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$idstr_xpath"); then
+if idstr=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$idstr_xpath" 2>/dev/null); then
 	 [[ "$idstr" =~ [a-zA-Z0-9\.{}@_-]{15,60} ]] || croak "This extension has a WEIRD id string."
 
 	 [ -a "$xpj/$idstr" ] || [ -a "$xpj/$idstr.xpi" ] && {
@@ -80,7 +80,7 @@ if idstr=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$idstr_xpath"); the
 	 }
 
 	 # leave as zip or unpack?
-	 if unpak=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$unpak_xpath") && [ "$unpak" = true ]; then
+	 if unpak=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$unpak_xpath" 2>/dev/null) && [ "$unpak" = true ]; then
 		  export dtype=dir
 		  export xpj=$xpj/$idstr
 		  mkdir -p "$xpj"
@@ -106,7 +106,7 @@ toxpj() {
 # check for seamonkey maxversion
 newst=2.28
 maxver_xpath="//*[@em:id='{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}']/@em:maxVersion | //*[em:id='{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}']/em:maxVersion"
-if verst=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$maxver_xpath"); then
+if verst=$(unzip -qp "$xpi" install.rdf | xml sel $ns -t -v "$maxver_xpath" 2>/dev/null); then
 	 # a seamonkey clause exists!
 	 case $verst in
 		  2.\*|2.24|2.24.\*|2.25a1|2.25a2|2.25|2.25.\*|2.26a1|2.26a2|2.26|2.26.\*|2.27a1|2.27a2|2.27|2.27.\*|2.28a1|2.28a2|2.28|3.0.\*|99.\*)
