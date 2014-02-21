@@ -7,7 +7,7 @@ ver_ff=27.0 #firefox
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
-makedepends=(wget xmlstarlet proterozoic zip unzip sqlite3)
+makedepends=(wget xmlstarlet zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
 pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20 2.21 2.22 2.22.1 2.23)

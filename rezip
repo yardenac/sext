@@ -4,14 +4,19 @@
 #
 # USAGE: cat new_file_contents | rezip zipfile.zip internal/path/to/new_file
 
-. /usr/share/ppz/bash.functions
+for arg; do
+	 [ -a "$arg" ] && unzip -qqt "$arg" &>/dev/null && {
+		  zipfile="$arg"
+		  continue
+	 }
+	 [[ "$arg" =~ \.\./ ]] && continue
+	 zpath=$arg
+done
 
-zipfile="$1"
-zpath="$2"
-is zip "$zipfile" || is jar "$zipfile" || exit 1
-[[ "$zpath" =~ \.\./ ]] && exit 1
+[ "$zipfile" ] && [ "$zpath" ] || exit 1
+
 while :; do
-	 td=/tmp/$(uniq_token)
+	 td=/tmp/.rezip.$EUID.$$.$(date +%s).$RANDOM
 	 mkdir -p $td && break
 done
 pushd $td &>/dev/null
