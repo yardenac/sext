@@ -5,3 +5,4 @@ pkg/
 *.xpi
 *.xpi.*
 *.jar
+*.log
