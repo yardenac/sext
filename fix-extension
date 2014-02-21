@@ -105,7 +105,7 @@ fi
 # (whether extracted or not)
 toxpj() {
 	 case $dtype in
-		  zip)	cat <&0 | rezip "$xpj" "$1";;
+		  zip)	cat <&0 | ./rezip "$xpj" "$1";;
 		  dir)	cat <&0 >| "$xpj/$1";;
 	 esac
 }

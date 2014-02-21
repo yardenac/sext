@@ -64,29 +64,31 @@ package() {
 	 local smprof=$smdir/defaults/profile ffprof=$ffdir/defaults/profile
 	 local xpi section
 	 mkdir -p $smdir/extensions $ffdir/extensions $ffdir/defaults/profile
+	 pushd ${startdir}
 	 for xpi in $srcdir/*.xpi; do
 		  echo "Fixing $(basename "$xpi") ..."
 		  $startdir/fix-extension $xpi $smdir/extensions
 	 done
+	 popd
 	 install -D {$smdir,$ffdir}/extensions/{57068FBE-1506-42ee-AB02-BD183E7999E4}.xpi
 	 rm -f $smdir/extensions/https-everywhere@eff.org/chrome/content/rules/GoogleMaps.xml~HEAD
-	 install -D {$srcdir/..,$smprof/useragentswitcher}/useragents.xml
-	 install -D {$srcdir/..,$smprof/adblockplus}/patterns.ini
-	 install -D {$srcdir/..,$smprof}/localstore.rdf.sxt
-	 install -D {$srcdir/..,$smprof}/foxyproxy.xml
-	 install -D {$srcdir/..,$smprof}/cert_override.txt
-	 install -D {$srcdir/..,$ffprof}/cert_override.txt
-	 install -D {$srcdir/..,$smdir/defaults/pref}/local-settings.js
-	 install -D {$srcdir/..,$ffdir/defaults/pref}/local-settings.js
-	 install -D {$srcdir/..,$smdir}/mozilla.cfg
-	 install -D $srcdir/../mozilla.ff.cfg $ffdir/mozilla.cfg
-	 install -D $srcdir/../localstore.ff.rdf $ffdir/defaults/profile/localstore.rdf
+	 install -D {$startdir,$smprof/useragentswitcher}/useragents.xml
+	 install -D {$startdir,$smprof/adblockplus}/patterns.ini
+	 install -D {$startdir,$smprof}/localstore.rdf.sxt
+	 install -D {$startdir,$smprof}/foxyproxy.xml
+	 install -D {$startdir,$smprof}/cert_override.txt
+	 install -D {$startdir,$ffprof}/cert_override.txt
+	 install -D {$startdir,$smdir/defaults/pref}/local-settings.js
+	 install -D {$startdir,$ffdir/defaults/pref}/local-settings.js
+	 install -D {$startdir,$smdir}/mozilla.cfg
+	 install -D $startdir/mozilla.ff.cfg $ffdir/mozilla.cfg
+	 install -D $startdir/localstore.ff.rdf $ffdir/defaults/profile/localstore.rdf
 	 sed -i \
 		  -e s/%VER_SM%/$ver_sm/ig \
 		  -e s/%VER_FF%/$ver_ff/ig \
 		  -e s/%VER_GO%/$ver_go/ig {$smdir,$ffdir}/mozilla.cfg
 
-	 rps_section() { grep -Pzo '(?<=\['"${1}"'\]\n)[^[]*' $srcdir/../site-rules.txt; }
+	 rps_section() { grep -Pzo '(?<=\['"${1}"'\]\n)[^[]*' $startdir/site-rules.txt; }
 	 section_to_pref()  { echo        'pref("'"$2"'","'$(rps_section "$1")'");' >> $smdir/mozilla.cfg; }
 	 section_to_dpref() { echo 'defaultPref("'"$2"'","'$(rps_section "$1")'");' >> $smdir/mozilla.cfg; }
 	 section_to_pref	origins						extensions.requestpolicy.allowedOrigins
@@ -106,7 +108,7 @@ package() {
 				echo "INSERT INTO \"moz_hosts\" VALUES(NULL,'${REPLY}','cookie',${1},0,0);"
 		  done
 	 }; {
-		  cat $srcdir/../permissions.sqlite.dump
+		  cat $startdir/permissions.sqlite.dump
 		  rps_section cookies-temp | to_cookietype 8
 		  rps_section cookies-full | to_cookietype 1
 		  echo "COMMIT;"
