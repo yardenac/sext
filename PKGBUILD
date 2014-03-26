@@ -1,16 +1,16 @@
 pkgname=sext
 pkgver=0.$(date +%s)
 pkgrel=1
-ver_sm=2.24 #seamonkey
-ver_go=27.0 #gecko
-ver_ff=27.0 #firefox
+ver_sm=2.25 #seamonkey
+ver_go=28.0 #gecko
+ver_ff=28.0 #firefox
 pkgdesc="Altered seamonkey extensions"
 arch=(any)
 license=('GPL')
 makedepends=(wget xmlstarlet zip unzip sqlite3)
 depends=(seamonkey=$ver_sm)
 install=install
-pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20 2.21 2.22 2.22.1 2.23)
+pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20 2.21 2.22 2.22.1 2.23 2.24)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.4.1-fx+an+sm+tb.xpi"
