@@ -20,7 +20,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://addons.cdn.mozilla.net/_files/3255/cookieswap-13.4.331-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/336172/copy_pure_text-2.0.1-sm+fx+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/156490/duplicate_this_tab-1.3-fx+sm.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot_mass_downloader-1.5.5.97-fx+sm+tb.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/220/flashgot_mass_downloader-1.5.5.99-sm+tb+fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/2464/foxyproxy_standard-4.2.4-fx+tb+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/337195/google_privacy-0.2.3-sm+fx.xpi"
 		  "https://www.eff.org/files/https-everywhere-4.0development.15.xpi"
@@ -41,7 +41,7 @@ md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"126d6abde9b02efeec82dc4af2354444"	# cookieswap
 			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
 			"83a4c672016723021e38ed4925dd491f"	# duplicate this
-			"a8133c4bf35527a62f3672235565dfc9"	# flashgot
+			"93a6c31f5d7ed2108bc1c4345c9a7946"	# flashgot
 			"c054b26bd823a044b9419af6787bd043"	# foxyproxy
 			"f441d80dacc34d33f8b7d369c9191ec8"	# google privacy
 			"7a57f8a1c5cba55a92bdb2a32d5e2b67"	# https everywhere
