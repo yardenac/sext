@@ -32,26 +32,26 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 		  "https://addons.cdn.mozilla.net/storage/public-staging/3173/trackmenot-0.6.728-fx+sm.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/59/user_agent_switcher-0.7.3-fx+sm.xpi")
 noextract=("${source[@]##*/}")
-md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
-			"969fb1037482120a1d81ae0253e36319"	# abduction
-			"7a19a9662bb5f5dbfa132e74cd36d244"	# adblock plus
-			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
-			"269401fde20879ec4f869052a7c8a37d"	# compact menu
-			"6bda863d544efe0d876e29fea2f3fcc7"	# cookiesafe
-			"126d6abde9b02efeec82dc4af2354444"	# cookieswap
-			"29ff52ebd23ed5ab8e331a808dee9062"	# copy pure text
-			"83a4c672016723021e38ed4925dd491f"	# duplicate this
-			"93a6c31f5d7ed2108bc1c4345c9a7946"	# flashgot
-			"c054b26bd823a044b9419af6787bd043"	# foxyproxy
-			"f441d80dacc34d33f8b7d369c9191ec8"	# google privacy
-			"5b0e0a1fd90c848b8a85706f1cd3b9a0"	# https everywhere
-			"b42e3b9f92aab0f716bcd03b621aa72e"	# noscript
-			"d8a91a585a2cf2a0e073c90e4b72f7c4"	# organize status bar
-			"72911f3df8cb79b9cfbce5a36296e03d"	# refcontrol
-			"c525980cf267c310ea22ba3ddb9be1de"	# requestpolicy
-			"5aa14241662f9b1ac446cf1f80e71047"	# show my password
-			"533d19c08df11939dbaa7f7952238ccf"	# track me not
-			"d7f1f4b3689bf61c3d583432872a4cc2")	# user agent switcher
+sha256sums=("ed82f4d62d9bb6c2bbda1fa333cad319383a42cd217b4b5614f68d2bb15a9229"   # littlemonkey
+            "952b2e5f2c1a9913d29f6d6cc93f373bf598d93f8e346a42e0b72d26856ed606"   # abduction
+            "c88ef154def99434e42739be9b22f363f50bcde9f033618c8e148ce6827b7201"   # adblock plus
+            "cbac7dae2efa5da3463911f1612b942dc79dffa90494592c2cbf53ea4fa76838"   # betterprivacy
+            "4404da96b0f555288d7426d1a9f0de81d22a273c71fac3415417c4fdd5b7b65c"   # compact menu
+            "b3273c4ae8dea9badec43a8a357549a6008f7d9937737ccd2c3942ebe69a6517"   # cookiesafe
+            "623da0c9089169c7297dcdd05f5d11b1471db6d82a7399aa867c07c23a7ba0a4"   # cookieswap
+            "631ba31c00eb554ae7f21053e17405a40e4329ca23c1311db583a0d682b12b35"   # copy pure text
+            "09991f51582fd6fa36f8d7d6011e9ac2fbe40612a047eb547ca00560d57dc26d"   # duplicate this
+            "51c79aa52025962483fab4c79f67a8dcfd3fe46eb788d8a488d069279bb36470"   # flashgot
+            "6d07b1403a21e989c5445187b92f3efb8ada2a529479fff1721e2d9f10b38db1"   # foxyproxy
+            "96de06a08345f72c471c8a4ef97acadc9e483c6520ca4fc5414df007158dba91"   # google privacy
+            "eac48781de747a33503c92a36024d910af97fa3264c3912faff282d99da092fb"   # https everywhere
+            "aea2ef3a262a70e871df0de937ac8f53cd2c5d1913066200d192bb6e30924275"   # noscript
+            "4dacf971bcb94c22c89fa32c4e5ff5e5393d6f2fe4d8f817b35b1a027cb4ecda"   # organize status bar
+            "a01fcf5a628d0d534760cc7f7da33ab15b84656899bb9d82c91e79cdfce920be"   # refcontrol
+            "4e828a0c120054ee4ca169c993e7231038228d0e4e2d9c8d86b717a94aa3bd5a"   # requestpolicy
+            "be970135304f935725710526bfcb3c782eba45d7dccf4ed4b7ab44a9b258308f"   # show my password
+            "49225bb81193dda06688c596ad4578025f3f3d2ca91d517e4d0eeb74234c5d6f"   # track me not
+            "29b95958781bd1e03d0a217a9c34f382f542f5f3769c9c7bfc0b919cc89858b8")  # user agent switcher
 # last checked for updates: June 9 2014
 # https://addons.mozilla.org/EN-us/seamonkey/extensions/?sort=updated
 build() {
