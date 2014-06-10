@@ -13,7 +13,7 @@ install=install
 pastvers=(2.16 2.16.1 2.16.2 2.17 2.17.1 2.19 2.20 2.21 2.22 2.22.1 2.23 2.24 2.25)
 source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey-1.8.76-sm.xpi"
 		  "http://downloads.mozdev.org/xsidebar/mods/abduction_screen_capture-3.0.14-mod.xpi"
-		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.4.1-fx+an+sm+tb.xpi"
+		  "https://addons.cdn.mozilla.net/storage/public-staging/1865/adblock_plus-2.6.3-fx+an+sm+tb.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/6623/betterprivacy-1.68-fx.xpi"
 		  "https://addons.cdn.mozilla.net/storage/public-staging/4550/compact_menu_2-4.3.1-fx+sb+sm+tb-linux.xpi"
 		  "https://addons.cdn.mozilla.net/_files/311084/cookiesafe_cookies_verwalten-3.1-fx+sm+tb.xpi"
@@ -34,7 +34,7 @@ source=("https://static.addons.mozilla.net/_files/309/littlemonkey_for_seamonkey
 noextract=("${source[@]##*/}")
 md5sums=("e4280b110334b67fcfc9567100ef7e5b"	# littlemonkey
 			"969fb1037482120a1d81ae0253e36319"	# abduction
-			"0ee1ff417d59b4f60467d19f76d0b896"	# adblock plus
+			"7a19a9662bb5f5dbfa132e74cd36d244"	# adblock plus
 			"efac8cd8fe05bf0a7d173f92e481e65a"	# betterprivacy
 			"269401fde20879ec4f869052a7c8a37d"	# compact menu
 			"6bda863d544efe0d876e29fea2f3fcc7"	# cookiesafe
